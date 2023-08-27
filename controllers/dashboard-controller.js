@@ -1,34 +1,31 @@
 import { stationStore } from "../models/station-store.js";
-import { latestReadings } from "../utils/latestreadings.js";
+//import { latestReadings } from "../utils/latestreadings.js";
+import { accountsController } from "./accounts-controller.js";
+
 
 export const dashboardController = {
+
   async index(request, response) {
-    const stations = await stationStore.getAllStations();
-    
-    //Add latest readings to each station
-    for (const station of stations) {
-      const readingObject = await latestReadings(station._id);
-      Object.assign(station, readingObject.reading);
-    };
+    let loggedInUser = await accountsController.getLoggedInUser(request);
 
     const viewData = {
       title: "Station Dashboard",
-      stations: stations,
+      stations: await stationStore.getStationsByUserId(loggedInUser._id),
     };
+
     console.log("dashboard rendering");
-    //Debug
-    let viewDataString = JSON.stringify(viewData); // Debug Remove Later
-    let viewDateObject = JSON.parse(viewDataString); // Debug Remove Later
-    console.dir(viewDateObject, { depth: null, colors: true }); // Debug Remove Later
-  
     response.render("dashboard-view", viewData);
-  },
+
+},
+
 
   async addStation(request, response) {
+    const loggedInUser = await accountsController.getLoggedInUser(request);
     const newStation = {
       title: request.body.title,
       latitude: request.body.latitude,
       longitude: request.body.longitude,
+      userid: loggedInUser._id,
     };
     console.log(`adding station ${newStation.title}`);
     await stationStore.addStation(newStation);
@@ -36,6 +33,7 @@ export const dashboardController = {
   },
 
   async deleteStation(request, response) {
+    const loggedInUser = await accountsController.getLoggedInUser(request);
     const stationId = request.params.id;
     console.log(`Deleting Station ${stationId}`);
     await stationStore.deleteStationById(stationId);
