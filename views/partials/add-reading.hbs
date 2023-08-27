@@ -1,0 +1,36 @@
+    <form class="box" action="/station/{{station._id}}/addreading" method="POST">
+  <label>Enter Reading Details:</label>
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="field">
+            <div class="control">
+                <div class="select is-fullwidth">
+                    <select name="code">
+                        <option>Select Code</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                        <option value="300">300</option>
+                        <option value="400">400</option>
+                        <option value="500">500</option>
+                        <option value="600">600</option>
+                        <option value="700">700</option>
+                        <option value="800">800</option>
+                    </select>
+                </div>
+            </div>      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Temperature" name="temperature">
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Wind Speed" name="windSpeed">
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter Wind Direction" name="windDirection">
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Enter pressure" name="pressure">
+      </div>
+    </div>
+  </div>
+  <button class="button is-info">Add Reading</button>
+</form>

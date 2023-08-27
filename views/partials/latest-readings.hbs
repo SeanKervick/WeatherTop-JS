@@ -1,0 +1,72 @@
+<div class="content box">
+  <div class="columns has-text-info">
+    <div class="column has-background-info-light mr-1">
+      <div class="columns">
+        <p class="column is-three-fifths">
+          <br /><br />
+          Lat: {{latitude}}
+          <br />
+          Lng: {{longitude}}
+        </p>
+        <p class="column is-two-fifths has-text-centered mt-2 icon is-medium fas fa-2x">
+          
+        </p>
+      </div>
+    </div>
+    <div class="column has-background-info-light mx-1">
+      <div class="columns">
+        <p class="column is-three-fifths">
+          Weather
+          <br/><br/>
+          {{weather}}
+        </p>
+        <p class="column is-two-fifths has-text-centered mt-2 icon is-medium fas fa-2x">
+          
+        </p>
+      </div>
+    </div>
+    <div class="column has-background-info-light mx-1">
+      <div class="columns">
+        <p class="column is-three-fifths">
+          Temperature
+          <br/><br/>
+          {{latestTemp}}C<br/>
+          {{latestTempFahrenheit}}F<br/><br/><br/><br/><br/>
+          Max {{maxTemp}}C<br/>
+          Min {{minTemp}}C
+        </p>
+        <p class="column is-three-fifths mt-2 ml-4 icon is-medium fas fa-2x">
+        </p>
+      </div>
+    </div>
+    <div class="column has-background-info-light mx-1">
+      <div class="columns">
+        <p class="column is-three-fifths">
+          Wind<br /><br />
+          {{latestBeaufort}}bft<br/>
+          Direction:
+          {{compassDirection}}<br/>
+          Feels like {{windChill}}C<br/><br/>
+          Min: {{minWind}}kM/hr
+          <br/>
+          Max: {{maxWind}}kM/hr
+        </p>
+        <p class="column is-two-fifths has-text-centered fas fa-2x">
+        </p>
+      </div>
+    </div>
+    <div class="column has-background-info-light ml-1">
+      <div class="columns">
+        <p class="column is-three-fifths">
+          Pressure<br/><br/>
+          {{latestPressure}}hpa<br/><br/><br/><br/><br/><br/>
+          Min: {{minPressure}}hpa<br/>
+          Max: {{maxPressure}}hpa
+        </p>
+        <p class="column is-two-fifths has-text-centered icon is-medium fas fa-2x">
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
