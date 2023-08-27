@@ -20,6 +20,13 @@
       "longitude": "456",
       "userid": "a8538f13-33b4-4165-a610-93ba5ea19025",
       "_id": "02b7eb7b-558a-4af3-8c1a-3f99414f7c0b"
+    },
+    {
+      "title": "Tramore",
+      "latitude": "58.324545",
+      "longitude": "945.64564",
+      "userid": "a8538f13-33b4-4165-a610-93ba5ea19025",
+      "_id": "dcb4cefe-385d-4dc7-8a51-ace9a3c55750"
     }
   ]
 }
