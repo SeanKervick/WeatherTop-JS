@@ -1,41 +1,58 @@
-export const conversions = {
+    const codeToStringMap = new Map();
 
-    codeToString(code) {
-        let option = code;
-        while (option != 0) {
-            let weather = " ";
+    codeToStringMap.set(100, {
+        description: "Clear",
+        icon: "../images/clear.png",
+    });
+    codeToStringMap.set(200, {
+        description: "Partial Clouds",
+        icon: "../images/partialClouds.png",
+    });
+    codeToStringMap.set(300, {
+        description: "Cloudy",
+        icon: "../images/cloudy.png",
+    });
+    codeToStringMap.set(400, {
+        description: "Light Showers",
+        icon: "../images/light-showers1.png",
+    });
+    codeToStringMap.set(500, {
+        description: "Heavy Showers",
+        icon: "../images/heavy-showers.png",
+    });
+    codeToStringMap.set(600, {
+        description: "Rain",
+        icon: "../images/rain.png",
+    });
+    codeToStringMap.set(700, {
+        description: "Snow",
+        icon: "../images/snow.png",
+    });
+    codeToStringMap.set(800, {
+        description: "Thunder",
+        icon: "../images/thunder.png",
+    });
 
-            switch (option) {
-                case 100:
-                    weather = "Clear";
-                    return weather;
-                case 200:
-                    weather = "Partial Clouds";
-                    return weather;
-                case 300:
-                    weather = "Cloudy";
-                    return weather;
-                case 400:
-                    weather = "Light Showers";
-                    return weather;
-                case 500:
-                    weather = "Heavy Showers";
-                    return weather;
-                case 600:
-                    weather = "Rain";
-                    return weather;
-                case 700:
-                    weather = "Snow";
-                    return weather;
-                case 800:
-                    weather = "Thunder";
-                    return weather;
-                default:
-                    return null;
-            }
-        }
-        return null;
-    },
+    /*
+    const directionMap = new Map();
+
+    directionMap.set(0, {
+        icon: "../images/clear.png",
+    });
+    */
+
+
+    export const conversions = {
+
+    codeToStringName(code) {
+        return codeToStringMap.get(code).description;
+        },
+        
+    codeToStringIcon(code) {
+        return codeToStringMap.get(code).icon;
+        },
+            
+
 
     convertToFahrenheit(temperature) {
         let fahrenheit = (temperature * 9) / 5 + 32;
@@ -175,7 +192,6 @@ export const conversions = {
         }
         return " ";
     },
-
     convertToWindChill(temperature, windSpeed) {
         let windChill = 13.12 + (0.6215 * temperature) - (11.37 * Math.pow(windSpeed, 0.16)) + (0.3965 * temperature * Math.pow(windSpeed, 0.16));
         return Math.round(windChill);

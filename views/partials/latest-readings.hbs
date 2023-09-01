@@ -8,8 +8,8 @@
           <br />
           Lng: {{longitude}}
         </p>
-        <p class="column is-two-fifths has-text-centered mt-2 icon is-medium fas fa-2x">
-          
+        <p class="column is-two-fifths has-text-centered mt-2 image is-medium fas fa-2x">
+          <img src="../images/location.png" alt="location">
         </p>
       </div>
     </div>
@@ -18,10 +18,10 @@
         <p class="column is-three-fifths">
           Weather
           <br/><br/>
-          {{weather}}
+          {{codeName}}
         </p>
-        <p class="column is-two-fifths has-text-centered mt-2 icon is-medium fas fa-2x">
-          
+        <p class="column is-two-fifths has-text-centered mt-2 fas fa-2x">
+          <img src="{{codeIcon}}" alt="weatherCodeIcon">
         </p>
       </div>
     </div>
@@ -35,13 +35,14 @@
           Max {{maxTemp}}C<br/>
           Min {{minTemp}}C
         </p>
-        <p class="column is-three-fifths mt-2 ml-4 icon is-medium fas fa-2x">
+        <p class="column is-two-fifths has-text-centered mt-2 fas fa-2x">
+          <img src="../images/thermometer.png" alt="thermometer">
         </p>
       </div>
     </div>
     <div class="column has-background-info-light mx-1">
       <div class="columns">
-        <p class="column is-three-fifths">
+        <p class="column is-one-fifths">
           Wind<br /><br />
           {{latestBeaufort}}bft<br/>
           Direction:
@@ -52,6 +53,7 @@
           Max: {{maxWind}}kM/hr
         </p>
         <p class="column is-two-fifths has-text-centered fas fa-2x">
+          <img src="../images/wind.png" alt="wind">
         </p>
       </div>
     </div>
@@ -64,7 +66,7 @@
           Max: {{maxPressure}}hpa
         </p>
         <p class="column is-two-fifths has-text-centered icon is-medium fas fa-2x">
-          
+          <img src="../images/pressure.png" alt="pressure">
         </p>
       </div>
     </div>

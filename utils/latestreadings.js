@@ -9,6 +9,9 @@ export const latestReadings = async (id) => {
 
   const reading = {
     latestCode: null,
+    codeName: null,
+    codeIcon: null,
+    //directionIcon: null,
     latestTemp: null,
     latestWindSpeed: null,
     latestWindDirection: null,
@@ -30,6 +33,9 @@ export const latestReadings = async (id) => {
   if (readings.length > 0) {
     latestReading = readings.length - 1;
     reading.latestCode = readings[latestReading].code;
+    reading.codeName = conversions.codeToStringName(reading.latestCode);
+    reading.codeIcon = conversions.codeToStringIcon(reading.latestCode);
+    //reading.directionIcon = conversions.directionIcon(reading.compassDirection);
     reading.latestTemp = readings[latestReading].temperature;
     reading.latestWindSpeed = readings[latestReading].windSpeed;
 
@@ -38,7 +44,6 @@ export const latestReadings = async (id) => {
 
     reading.latestTempFahrenheit = conversions.convertToFahrenheit(reading.latestTemp);
     reading.latestBeaufort = conversions.beaufort(reading.latestWindSpeed);
-    reading.weather = conversions.codeToString(reading.latestCode);
     reading.compassDirection = conversions.direction(reading.latestWindDirection);
     reading.windChill = conversions.convertToWindChill(reading.latestTemp, reading.latestWindSpeed);
     reading.maxTemp = analytics.findMaxValue(

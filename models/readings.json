@@ -64,25 +64,6 @@
       "userid": "a8538f13-33b4-4165-a610-93ba5ea19025",
       "_id": "14f43279-aec5-499e-b683-cb0269928e96",
       "stationid": "02b7eb7b-558a-4af3-8c1a-3f99414f7c0b"
-    },
-    {
-      "code": 600,
-      "temperature": 32,
-      "windSpeed": 4,
-      "windDirection": 180,
-      "pressure": 750,
-      "userid": "241f3515-06aa-4340-b981-2be746bf4517",
-      "_id": "0ad80313-9c6b-4f90-a84b-873543e5d0e7",
-      "stationid": "f1bf7ef7-3966-44bc-9722-828dc7a52aab"
-    },
-    {
-      "code": 500,
-      "temperature": 10.6,
-      "windSpeed": 12,
-      "windDirection": 180,
-      "pressure": 1000,
-      "_id": "f2d3b599-a861-4f92-bad6-48d5dccba34c",
-      "stationid": "dcb4cefe-385d-4dc7-8a51-ace9a3c55750"
     }
   ]
 }
