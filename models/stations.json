@@ -30,10 +30,17 @@
     },
     {
       "title": "Dunmore",
-      "latitude": "123",
-      "longitude": "456",
+      "latitude": "14.205",
+      "longitude": "78.349",
       "userid": "04d4916f-8de2-4863-9cde-376d551f0d09",
-      "_id": "ab3e1071-3d24-41e6-81f7-883b6ab12162"
+      "_id": "97cd221c-5bcc-4729-8b96-a594861a5f92"
+    },
+    {
+      "title": "Tramore",
+      "latitude": "72.106",
+      "longitude": "-789.249",
+      "userid": "04d4916f-8de2-4863-9cde-376d551f0d09",
+      "_id": "6b77c213-b408-4f60-8f54-43bf38a81f82"
     }
   ]
 }

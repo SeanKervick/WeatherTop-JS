@@ -2,7 +2,10 @@ import { stationStore } from "../models/station-store.js";
 import { readingStore } from "../models/reading-store.js";
 import { latestReadings } from "../utils/latestreadings.js";
 
+
 export const stationController = {
+
+
   async index(request, response) {
     const station = await stationStore.getStationById(request.params.id);
     console.log("station_ID: " + station._id);
@@ -18,16 +21,12 @@ export const stationController = {
     };
 
     Object.assign(viewData, lastReading.reading);
-
-    //Debug
-    let viewDataString = JSON.stringify(viewData); // Debug Remove Later
-    let viewDateObject = JSON.parse(viewDataString); // Debug Remove Later
-    console.dir(viewDateObject, { depth: null, colors: true }); // Debug Remove Later
-
     response.render("station-view", viewData);
   },
 
+
   async addReading(request, response) {
+    const timestamp = new Date(); // Get the current date and time 
     const station = await stationStore.getStationById(request.params.id);
     const newReading = {
       code: Number(request.body.code),
@@ -35,6 +34,7 @@ export const stationController = {
       windSpeed: Number(request.body.windSpeed),
       windDirection: Number(request.body.windDirection),
       pressure: Number(request.body.pressure),
+      timestamp: timestamp.toLocaleString(), // Add the timestamp to the reading
     };
     console.log(`adding reading ${newReading.code}`);
     await readingStore.addReading(station._id, newReading);

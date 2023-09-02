@@ -66,13 +66,34 @@
       "stationid": "02b7eb7b-558a-4af3-8c1a-3f99414f7c0b"
     },
     {
-      "code": 200,
+      "code": 100,
       "temperature": 0,
       "windSpeed": 0,
       "windDirection": 0,
       "pressure": 0,
-      "_id": "e4068387-e9a7-4773-917e-989331f62033",
+      "timestamp": "2/9/2023, 12:36:22",
+      "_id": "0f9ed55d-a9af-45cc-abee-8bd45cfd5406",
       "stationid": "ab3e1071-3d24-41e6-81f7-883b6ab12162"
+    },
+    {
+      "code": 100,
+      "temperature": 36,
+      "windSpeed": 4,
+      "windDirection": 100.72,
+      "pressure": 1000,
+      "timestamp": "2/9/2023, 12:41:37",
+      "_id": "a2dc91bd-9437-4174-9d20-9d8d930b9a56",
+      "stationid": "97cd221c-5bcc-4729-8b96-a594861a5f92"
+    },
+    {
+      "code": 800,
+      "temperature": 10.6,
+      "windSpeed": 46,
+      "windDirection": 197.64,
+      "pressure": 1214,
+      "timestamp": "2/9/2023, 12:42:31",
+      "_id": "0040c2e5-4193-409b-8304-7db7deaf400f",
+      "stationid": "97cd221c-5bcc-4729-8b96-a594861a5f92"
     }
   ]
 }
