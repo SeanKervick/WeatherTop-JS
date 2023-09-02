@@ -27,7 +27,7 @@ export const latestReadings = async (id) => {
     minWind: null,
     maxPressure: null,
     minPressure: null,
-
+    readingsRecorded: null,
   };
 
   if (readings.length > 0) {
@@ -38,10 +38,8 @@ export const latestReadings = async (id) => {
     //reading.directionIcon = conversions.directionIcon(reading.compassDirection);
     reading.latestTemp = readings[latestReading].temperature;
     reading.latestWindSpeed = readings[latestReading].windSpeed;
-
     reading.latestWindDirection = readings[latestReading].windDirection;
     reading.latestPressure = readings[latestReading].pressure;
-
     reading.latestTempFahrenheit = conversions.convertToFahrenheit(reading.latestTemp);
     reading.latestBeaufort = conversions.beaufort(reading.latestWindSpeed);
     reading.compassDirection = conversions.direction(reading.latestWindDirection);
@@ -70,10 +68,13 @@ export const latestReadings = async (id) => {
       readings.map((readings) => readings.pressure),
       "min"
     );
+    reading.readingsRecorded = readings.length;
   };
   return {
     latestReading: latestReading,
     reading: reading,
   };
+  
+
 };
 

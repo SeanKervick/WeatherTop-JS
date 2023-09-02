@@ -14,6 +14,13 @@
       "email": "seankervick95@hotmail.com",
       "password": "4567",
       "_id": "a8538f13-33b4-4165-a610-93ba5ea19025"
+    },
+    {
+      "firstname": "Seán",
+      "lastname": "b",
+      "email": "sb@gmail.com",
+      "password": "123456",
+      "_id": "04d4916f-8de2-4863-9cde-376d551f0d09"
     }
   ]
 }

@@ -49,7 +49,7 @@
         },
         
     codeToStringIcon(code) {
-        return codeToStringMap.get(code).icon;
+        return codeToStringMap.get(code).icon
         },
             
 

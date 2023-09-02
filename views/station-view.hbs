@@ -3,7 +3,15 @@
   <div class="title">
     {{station.title}}
   </div>
+  {{#if (gt readingsRecorded 0)}}
   {{> latest-readings}}
   {{> list-readings}}
+  {{else}}
+    <div class="container">
+        <div class="has-text-danger has-text-centered">
+            No readings for {{station.title}}. Please enter a reading below.
+        </div>
+    </div>
+{{/if}}
   {{> add-reading}}
 </section>
