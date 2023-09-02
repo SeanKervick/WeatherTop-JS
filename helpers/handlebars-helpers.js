@@ -4,10 +4,5 @@ export const handlebarsHelpers = {
         return a > b;
       },
 
-      
-      gte: function (a, b) {
-        return a >= b;
-      },
-      
 };
 

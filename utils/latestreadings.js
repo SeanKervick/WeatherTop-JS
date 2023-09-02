@@ -35,7 +35,6 @@ export const latestReadings = async (id) => {
     reading.latestCode = readings[latestReading].code;
     reading.codeName = conversions.codeToStringName(reading.latestCode);
     reading.codeIcon = conversions.codeToStringIcon(reading.latestCode);
-    //reading.directionIcon = conversions.directionIcon(reading.compassDirection);
     reading.latestTemp = readings[latestReading].temperature;
     reading.latestWindSpeed = readings[latestReading].windSpeed;
     reading.latestWindDirection = readings[latestReading].windDirection;

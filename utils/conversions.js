@@ -33,14 +33,6 @@
         icon: "../images/thunder.png",
     });
 
-    /*
-    const directionMap = new Map();
-
-    directionMap.set(0, {
-        icon: "../images/clear.png",
-    });
-    */
-
 
     export const conversions = {
 
