@@ -16,4 +16,4 @@ user logs in again.
 npm start in terminal to run on localhost4000
 *****************************************
 
-![Alt weatherTopImage](image.png)
+![Alt weatherTopImage](/public/images/weathertop.png)
