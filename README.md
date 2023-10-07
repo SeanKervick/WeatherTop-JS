@@ -11,3 +11,6 @@ Calculations are performed to display information such as celsius to
 farenheit, wind direction & wind chill.
 The information is then stored in a .json file, saved for when the 
 user logs in again.
+*****************************************
+
+npm start in terminal to run on localhost4000
