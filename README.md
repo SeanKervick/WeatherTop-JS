@@ -14,3 +14,5 @@ user logs in again.
 *****************************************
 
 npm start in terminal to run on localhost4000
+
+![Alt text](image.png)
