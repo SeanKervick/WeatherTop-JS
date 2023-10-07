@@ -1,5 +1,5 @@
 # WeatherTop 2.0
-Welcome to the WeatherTop App!
+Hello, welcome to the WeatherTop App!
 
 This is an application that allows users to make an account by 
 signing up with their email address and password to create multiple
