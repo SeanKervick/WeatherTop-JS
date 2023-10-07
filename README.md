@@ -1,4 +1,4 @@
-# WeatherTop 0.1.0
+# WeatherTop 2.0
 Welcome to the WeatherTop App!
 
 This is an application that allows users to make an account by 
@@ -14,5 +14,6 @@ user logs in again.
 *****************************************
 
 npm start in terminal to run on localhost4000
+*****************************************
 
-![Alt text](image.png)
+![Alt weatherTopImage](image.png)
