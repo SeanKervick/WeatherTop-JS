@@ -1,7 +1,6 @@
 ![Alt weatherTopImage](/public/images/weathertop.png)
 
 <!-- TABLE OF CONTENTS -->
-<details>
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a><li>
@@ -9,7 +8,6 @@
     <li><a href="#installation">Installation</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
-</details>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -34,9 +32,8 @@ See the https://honeysuckle-laced-jury.glitch.me/
 
 Download the project here: 
 
-   ```
    https://github.com/SeanKervick/WeatherTop-JS/archive/refs/heads/master.zip
-   ```
+
 
 Install NPM packages from inside the root directory using command prompt by:
 
