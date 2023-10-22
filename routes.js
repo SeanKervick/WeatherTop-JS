@@ -4,7 +4,6 @@ import { dashboardController } from "./controllers/dashboard-controller.js";
 import { aboutController } from "./controllers/about-controller.js";
 import { stationController } from "./controllers/station-controller.js";
 
-//const accounts = require('./controllers/accounts.js');
 
 
 export const router = express.Router();
