@@ -10,7 +10,7 @@
   </ol>
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+# About The Project
 
 * This is a college assignment of a companion web app that allows users to make an account by signing up with their email address and password to create weatherstations and store readings.
 * Users can then add readings to the stations and the application then displays weather information based on the latest readings that have been added.
@@ -58,7 +58,7 @@ The app will then be available on:
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+#### Acknowledgments
 
 To be completed...
 * []()
