@@ -25,7 +25,7 @@
 <!-- Deployment -->
 ## Deployment
 
-See the https://honeysuckle-laced-jury.glitch.me/
+See a live demo of the project here: https://honeysuckle-laced-jury.glitch.me/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
